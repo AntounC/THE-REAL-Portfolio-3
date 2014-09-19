@@ -6,5 +6,7 @@ div {
 
 .container {
     border-color: red;
-}
 
+html {
+    background-color: blue;
+}
