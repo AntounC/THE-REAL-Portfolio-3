@@ -1,12 +1,16 @@
 div {
     border-style: solid;
     border-width: 5px;
-    padding: 100px;
+    padding: 10px;
+    border-color: red
 }
 
 .container {
     border-color: red;
+    
+}
 
-html {
-    background-color: blue;
+body {
+    background-color: purple;
+        
 }
