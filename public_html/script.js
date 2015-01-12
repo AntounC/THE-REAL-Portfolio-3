@@ -13,6 +13,9 @@ $("document").ready(function(){
             
 }); 
 
+   
+
+
 function mouseOverMe() {
     $("h1").html("IT'S JOOSE N JAM TIME");
 }
@@ -29,3 +32,10 @@ function mouseClick() {
 function alertButtonClick() {
     
 }
+
+function addAPara() {
+    $('#randPara').oppend('Rest in Programming');
+}
+
+$('#addAPara').bind('click' addPara);
+$('#removePara').bind('click' removeAPara);
