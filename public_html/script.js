@@ -13,6 +13,10 @@ $("document").ready(function(){
             
 }); 
 
+   $('#replaceWText').bind('click', replaceWText);
+   $('#randPara').bind('click', addAPara);
+   $('#removePara').bind('click', removeAPara);
+   
    
 
 
@@ -34,8 +38,9 @@ function alertButtonClick() {
 }
 
 function addAPara() {
-    $('#randPara').oppend('Rest in Programming');
+    $('#randPara').append(' Rest In Programming');
 }
 
-$('#addAPara').bind('click' addPara);
-$('#removePara').bind('click' removeAPara);
+function removeAPara() {
+    $('#randPara p:last').remove();
+}
