@@ -5,7 +5,7 @@
 $("document").ready(function(){
     $(".youtypewhatitis").css("background-color", "yellow");
  
-    $('p:last').css({"background-color": "green", "color": "white"});
+    $('#swage').css({"background-color": "green", "color": "white"});
     $('#oneButton').bind('click', alertButtonClick);
     
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
@@ -42,5 +42,16 @@ function addAPara() {
 }
 
 function removeAPara() {
-    $('#randPara p:last').remove();
+    $('#randPara').remove();
+}
+
+function hideThePage() {
+    $('#show').css('visibility', 'visible');
+    $('div').hide('slide', {}, 2500);
+    $('#show').show('fold', {}, 2500);
+}
+
+function showThePage() {
+    $('div').show('fold', {}, 2500);
+    $('#show').hide('puff', {}, 2500);
 }
