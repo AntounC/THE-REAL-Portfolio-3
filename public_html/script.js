@@ -10,12 +10,16 @@ $("document").ready(function(){
     
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     $('h1').bind('click', mouseClick);
+    
+    $('#superHumans').accordion({header: "h3"});
             
 }); 
 
    $('#replaceWText').bind('click', replaceWText);
    $('#randPara').bind('click', addAPara);
    $('#removePara').bind('click', removeAPara);
+   
+   
    
    
 
