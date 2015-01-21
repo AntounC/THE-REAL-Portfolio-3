@@ -1,4 +1,4 @@
-
+ 
 
 
 
@@ -13,13 +13,13 @@ $("document").ready(function(){
     
     $('#superHumans').accordion({header: "h3"});
             
-}); 
+   
 
    $('#replaceWText').bind('click', replaceWText);
    $('#randPara').bind('click', addAPara);
    $('#removePara').bind('click', removeAPara);
    
-   
+ });  
    
    
 
@@ -27,10 +27,12 @@ $("document").ready(function(){
 function mouseOverMe() {
     $("h1").html("IT'S JOOSE N JAM TIME");
 }
+/*Declares the text that is show once the mouse hovers over a certain area*/
 
 function mouseOutMe() {
     $('h1').html('SPR MLG WOOWWWWM SPR SANIC SPDDD');
 }
+/*Declares the text that will appear once the mouse has hovered over a certain spot and left that spot*/
 
 function mouseClick() {
     $('p').html('SPR SMASH BORS 4 WIE YU N TREE D ES');
@@ -40,14 +42,18 @@ function mouseClick() {
 function alertButtonClick() {
     
 }
+/*Has Jquery listen for a button click*/
 
 function addAPara() {
     $('#randPara').append(' Rest In Programming');
 }
+/*Declares that the element with the ID randpara is going to be added*/
 
-function removeAPara() {
+ function removeAPara() {
     $('#randPara').remove();
 }
+
+/*Declares the ID randpara as the paragraph that is going to be removed*/
 
 function hideThePage() {
     $('#show').css('visibility', 'visible');
